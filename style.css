@@ -17,6 +17,7 @@ html {
 
 p {
     color: rgb(50, 50, 51);
+    line-height: 1.5rem;
 }
 
 /*TRANSITION*/
@@ -147,4 +148,60 @@ a:hover {
 }
 
 /*SECTION*/
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 5rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/*HERO*/
+
+#hero {
+    display: flex;
+    justify-content: center;
+    gap: rem;
+    height: 80vh;
+}
+
+.hero__text {
+    align-self: center;
+    text-align: left;
+}
+
+.hero__text__p {
+    font-weight: 600;
+    text-align: left;
+}
+
+.hero__text__p1 {
+    font-size: 1.5rem;
+    margin-bottom: -0.75rem;
+    text-align: left;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hero__text__p2 {
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    text-align: left;
+}
+
+.hero__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
 
