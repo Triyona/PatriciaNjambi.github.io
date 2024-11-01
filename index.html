@@ -10,10 +10,11 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Patricia</div>
+        <div class="logo">P<span>ATRICIA.</span></div>
         <div>
             <ul class="nav-links">
                 <li><a href = "#about">About</a></li>
+                <li><a href = "#services">Services</a></li>
                 <li><a href = "#projects">Projects</a></li>
                 <!-- <li><a href = "#shop">Shop</a></li> -->
                 <li><a href = "#contact">Contact</a></li>
@@ -30,8 +31,9 @@
             </div>
             <div class = "menu-links">
                 <li><a href = "#about" onclick="togglemenu()">About</a></li>
+                <li><a href = "#services" onclick="togglemenu()">Services</a></li>
                 <li><a href = "#projects" onclick="togglemenu()">Projects</a></li>
-                <li><a href = "#shop" onclick="togglemenu()">Shop</a></li>
+                <!-- <li><a href = "#shop" onclick="togglemenu()">Shop</a></li> -->
                 <li><a href = "#contact" onclick="togglemenu()">Contact</a></li>
             </div>
         </div>
@@ -39,10 +41,60 @@
     <section id="hero">
        <div class="hero__text">
         <h1 class="title">Hello, I'm <span>Patricia Njambi</span></h1>
-        <p class="hero__text__p">A versatile graphic designer, transforming ideas<br>into impactful visuals across every medium.</p>
+        <p class="hero__text__p">A versatile graphic designer transforming ideas<br>into impactful visuals across every medium.</p>
        </div>
     </section>
-    <div></div>
+    <!-- ------------------ABOUT------------------ -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Assets/Patricia.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I am a self-taught graphic designer with a deep passion for art, design, gaming and music. I possess a strong understanding of color theory, layout design, typography, and imagery, which enables me to create effective visual content tailored to diverse client needs, ranging from large corporations to individual projects. I am also dedicated to continuous improvement in my creative thinking and design abilities, consistently seeking opportunities for learning and professional growth.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Social Media Design</span><br>Crafting stunning and engaging content that captures attention and enhances brand presence</li>
+                        <li><span>Motion Graphics</span><br>Creating striking logo animations, lyric videos, infographics, and more.</li>
+                        <li><span>UI/UX</span><br>Designing intuitive and user-friendly interfaces that enhance user experience for Web, App, and Games</li>
+                        <li><span>Print Designs</span><br>Designing visually appealing and effective materials such as posters, company profiles, and various printed materials</li>
+                        <li><span>Software Proficiency</span><br>Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Adobe Premiere Pro, and Figma, among others.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2022 - Present</span><br>Game Researcher at Mekan Games</li>
+                        <li><span>Apr 2021 - Apr 2022</span><br>Graphic Designer at Tunu App</li>
+                        <li><span>Aug 2019 - Mar 2020, Sep 2020 - Mar 2021</span><br>Graphic Design Intern & Graphic Designer at Sketchbook</li>
+                        <li><span>Apr 2020 - July 2020</span><br>Motion Graphic Design Intern</li>
+                        <li><span>Jun 2018 - Aug 2018</span><br>Motion Graphic Design Intern</li>
+                        <li><span>Feb 2018 - May 2018</span><br>Graphic Design Intern</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2015 - 2020</span><br>Bachelor's of Music Technology at Kenyatta University</li>
+                        <li><span>2015</span><br>ICDL/CBIT at Institute of Advanced Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------SERVICES------------------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+
+            </div>
+        </div>
+     </div>
     <script src="script.js"></script>
 </body>
 </html>
