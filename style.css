@@ -327,7 +327,7 @@ form input, form textarea {
         background: #F7566F;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -361,12 +361,14 @@ form input, form textarea {
     }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
+        flex-wrap: wrap;
     }
     .about-col-1 {
         margin-bottom: 30px;
     }
     .about-col-2 {
         font-size: 14px;
+        align-items: center;
     }
     .tab-links {
         font-size: 16px;
