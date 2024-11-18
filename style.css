@@ -322,7 +322,7 @@ form input, form textarea {
     display: block;
 }
 /* ------------------CSS FOR MOBILE------------------ */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     nav .fa-solid {
         display: block;
         font-size: 25px;
@@ -331,6 +331,7 @@ form input, form textarea {
     }
     #header {
         background-image: url(Assets/Phone-BG.png);
+        /* height: 80vh; */
     }
     .logo {
         font-size: 140px;
@@ -352,8 +353,8 @@ form input, form textarea {
     }
     .hero__text {
         margin-top: 10%;
-        margin-right: 9%;
-        font-size: 18px;
+        margin-right: 20%;
+        font-size: 16px;
     }
     .hero__text h1 {
         font-size: 30px;
@@ -382,9 +383,15 @@ form input, form textarea {
     }
     .tab-links {
         font-size: 16px;
-
+        margin-right: 20px;
     }
     .video-portfolio {
         width: 100%; 
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .copyright {
+        font-size: 14px;
     }
 }
