@@ -331,7 +331,7 @@ form input, form textarea {
     }
     #header {
         background-image: url(Assets/Phone-BG.png);
-        /* height: 80vh; */
+        height: 80vh;
     }
     .logo {
         font-size: 140px;
