@@ -322,7 +322,7 @@ form input, form textarea {
     display: block;
 }
 /* ------------------CSS FOR MOBILE------------------ */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     nav .fa-solid {
         display: block;
         font-size: 25px;
@@ -373,14 +373,12 @@ form input, form textarea {
     }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
-        flex-wrap: wrap;
     }
     .about-col-1 {
         margin-bottom: 30px;
     }
     .about-col-2 {
         font-size: 14px;
-        align-items: center;
     }
     .tab-links {
         font-size: 16px;
