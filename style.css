@@ -352,7 +352,6 @@ form input, form textarea {
     user-select: none;
     width: 400px;
     height: 400px;
-    display: block;
     border-radius: 12px;
     border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
