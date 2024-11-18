@@ -5,6 +5,7 @@
 //     icon.classList.toggle("open");
 // }
 
+// About tabs
 var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname){
@@ -20,7 +21,7 @@ var tablinks = document.getElementsByClassName("tab-links");
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-
+// Nav Hamburger
 var sidemenu = document.getElementById("sidemenu");
 
 function openmenu(){
@@ -30,6 +31,39 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 
+// Swiper Sliders
+new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+  
+    // Pagination Bullet
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        },
+    }
+  });
+
+// Contact Form
   const scriptURL = 'https://script.google.com/macros/s/AKfycbymJYXIzcIbUKri5F8eOdGwe3T4Xecp3dKRvp1pqvJtCVVLt9OtUtjkOkdi2M02S15o/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
@@ -46,3 +80,5 @@ function closemenu(){
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+

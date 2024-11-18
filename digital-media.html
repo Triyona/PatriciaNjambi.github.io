@@ -6,29 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patricia Njambi - Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="style-sub-pages.css"/>
+    <!-- ------------------LINKING SWIPERJS CSS------------------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <script src="https://kit.fontawesome.com/5f7d526671.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="sub-page">
     <div id="header-subpages">
         <div class="container">
-        <nav>
-            <img src="Assets/Logo.png" class="logo">
-                <ul id="sidemenu">
-                    <!-- <li><a href = "#home">Home</a></li> -->
-                    <li><a href = "index.html#about">About</a></li>
-                    <li><a href = "index.html#services">Services</a></li>
-                    <li><a href = "index.html#portfolio">Portfolio</a></li>
-                    <!-- <li><a href = "index.html#shop">Shop</a></li> -->
-                    <li><a href = "index.html#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+            <nav>
+                <img src="Assets/Logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <!-- <li><a href = "#home">Home</a></li> -->
+                        <li><a href = "index.html#about">About</a></li>
+                        <li><a href = "index.html#services">Services</a></li>
+                        <li><a href = "index.html#portfolio">Portfolio</a></li>
+                        <!-- <li><a href = "index.html#shop">Shop</a></li> -->
+                        <li><a href = "index.html#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
         </div>
-        <div class="container">
+    </div>
+    <!-- ------------------DIGITAL MEDIA ITEMS------------------ -->
+    <div id="digital-media-01">
+        <div class="container swiper">
+            <div class="work-text">
+                <h1>Tunu App</h1>
+                <p>While working at Tunu, I designed social media posts and videos while maintaining 
+                    the Tunu brand guidelines. Whether it was the app update, a holiday, 
+                    an event or ongoing giveaways, I designed posts and stories to communicate 
+                    the intended information.</p>
+            </div>
             <div class="card-wrapper">
-                
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Assets/Digital Media/Tunu - 01.jpg" class="card-image">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Assets/Digital Media/Tunu - 02.jpg" class="card-image">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Assets/Digital Media/Tunu - 03.png" class="card-image">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Assets/Digital Media/Tunu - 01.jpg" class="card-image">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Assets/Digital Media/Tunu - 02.jpg" class="card-image">
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
             </div>
         </div>
     </div>
@@ -36,5 +78,7 @@
     <div class="copyright">
         <p>Copyright © Patricia. All Rights Reserved.</p>
     </div>
+    <!-- ------------------LINKING SWIPERJS SCRIPT------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
