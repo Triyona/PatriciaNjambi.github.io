@@ -329,7 +329,16 @@ form input, form textarea {
     min-height: 100vh;
     background-color: rgb(50, 50, 50);
 }
-#digital-media-01 .container {
+#digital-media-01, .container {
+    padding: 10px 10%;
+}
+#digital-media-02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#digital-media-02, .container {
     padding: 10px 10%;
 }
 .work-text {
