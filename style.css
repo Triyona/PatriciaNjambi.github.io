@@ -389,7 +389,38 @@ form input, form textarea {
     color: #F7566F;
     margin-top: 35px;
 }
-
+.purchase {
+    margin: -50px 0 -20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+}
+.purchase2 {
+    margin: -50px 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+}
+/* ------------------LANDSCAPE WRAPPER------------------ */
+/* .card-wrapper-landscape {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper-landscape .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #F7566F;
+}
+.card-wrapper-landscape .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+.card-wrapper-landscape .swiper-slide-button {
+    color: #F7566F;
+    margin-top: 35px;
+} */
 
 /* ------------------CSS FOR MOBILE------------------ */
 @media only screen and (max-width: 840px) {
