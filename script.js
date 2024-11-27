@@ -31,37 +31,58 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 
-// Swiper Sliders
-new Swiper('.card-wrapper', {
-    loop: true,
-    spaceBetween: 30,
-  
-    // Pagination Bullet
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+// Function to check the aspect ratio of an image
+function getImageAspectRatio(image) {
+  return image.width / image.height;
+}
 
-    // Responsive breakpoints
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        840: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        },
-    }
+// Function to initialize Swiper based on the image aspect ratio
+function initializeSwiper() {
+  const swiperContainers = document.querySelectorAll('.card-wrapper');
+
+  swiperContainers.forEach(container => {
+      const images = container.querySelectorAll('.card-image');
+      let isLandscape = false;
+
+      // Check if the first image is landscape (aspect ratio > 1)
+      const firstImage = images[0];
+      firstImage.onload = function () {
+          if (getImageAspectRatio(firstImage) > 1) {
+              isLandscape = true;  // Landscape image
+          }
+
+          // Initialize Swiper with a custom slidesPerView based on the image type
+          new Swiper(container, {
+              loop: true,
+              spaceBetween: 30,
+              pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                  dynamicBullets: true,
+              },
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              },
+              breakpoints: {
+                  0: {
+                      slidesPerView: isLandscape ? 1 : 2,  // Landscape gets 1 slide per view, square/portrait gets 2
+                  },
+                  840: {
+                      slidesPerView: isLandscape ? 2 : 3,  // Landscape gets 2 slides per view, square/portrait gets 3
+                  },
+                  1024: {
+                      slidesPerView: isLandscape ? 2 : 3,  // Landscape gets 2 slides per view on 1024px width
+                  },
+              },
+          });
+      }
   });
+}
+
+// Call the initializeSwiper function when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', initializeSwiper);
+
 
 // Contact Form
   const scriptURL = 'https://script.google.com/macros/s/AKfycbymJYXIzcIbUKri5F8eOdGwe3T4Xecp3dKRvp1pqvJtCVVLt9OtUtjkOkdi2M02S15o/exec'
