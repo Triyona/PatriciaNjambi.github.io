@@ -395,8 +395,8 @@ form input, form textarea {
     justify-content: center;
     background-color: rgb(50, 50, 50);
 }
-.purchase2 {
-    margin: -50px 0 0;
+.download-game {
+    margin: -30px 0 0;
     display: flex;
     justify-content: center;
     background-color: rgb(50, 50, 50);
