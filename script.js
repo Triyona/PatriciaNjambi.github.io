@@ -66,10 +66,10 @@ function initializeSwiper() {
               },
               breakpoints: {
                   0: {
-                      slidesPerView: isLandscape ? 1 : 2,  // Landscape gets 1 slide per view, square/portrait gets 2
+                      slidesPerView: isLandscape ? 1 : 1,  // Landscape gets 1 slide per view, square/portrait gets 2
                   },
                   840: {
-                      slidesPerView: isLandscape ? 2 : 3,  // Landscape gets 2 slides per view, square/portrait gets 3
+                      slidesPerView: isLandscape ? 2 : 2,  // Landscape gets 2 slides per view, square/portrait gets 3
                   },
                   1024: {
                       slidesPerView: isLandscape ? 2 : 3,  // Landscape gets 2 slides per view on 1024px width
