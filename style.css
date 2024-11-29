@@ -416,6 +416,32 @@ form input, form textarea {
     margin-top: 50px;
 }
 
+/* ------------------MOTION GRAPHICS SUBPAGE------------------ */
+.motion-graphics-01 {
+    background-color: rgb(50, 50, 50);
+}
+.video-text {
+    padding: 30px 0;
+    background-color: rgb(50, 50, 50);
+}
+.video-text h1 {
+    padding-bottom: 15px;
+}
+.video-text2 {
+    padding: 30px 0;
+}
+.video-text2 h1 {
+    padding-bottom: 15px;
+}
+.video-portfolio2 {
+    margin-top: 50px;
+    aspect-ratio: 16 / 9;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ------------------CSS FOR MOBILE------------------ */
 @media only screen and (max-width: 840px) {
     nav .fa-solid {
@@ -481,6 +507,9 @@ form input, form textarea {
         margin-right: 20px;
     }
     .video-portfolio {
+        width: 100%; 
+    }
+    .video-portfolio2 {
         width: 100%; 
     }
     .contact-left, .contact-right {
