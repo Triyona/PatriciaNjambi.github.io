@@ -270,6 +270,94 @@ nav ul li a:hover {
 }
 
 /* ------------------PRINT SUBPAGE------------------ */
+.item {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+}
+/* BOOK */
+.book{
+    position: relative;
+    width: 296px;
+    height: 421px;
+    transition: transform 0.5s;
+}
+.book h3 {
+    color: black;
+}
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #020202;
+}
+.back {
+    z-index: 0;
+}
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-content {
+    transform: rotateY(180deg);
+}
+/* FLIPPED EFFECT */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+/* CONTROLLER BUTTONS */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+button:focus {
+    outline: none;
+}
+button:hover i {
+    color: crimson;
+}
+button i {
+    font-size: 40px;
+    color: #F7566F;
+}
+/* PAPER STACK ORDER */
+#p1 {
+    z-index: 3;
+}
+#p2 {
+    z-index: 2;
+}
+#p3 {
+    z-index: 1;
+}
 
 /* ------------------CSS FOR MOBILE------------------ */
 @media only screen and (max-width: 840px) {
