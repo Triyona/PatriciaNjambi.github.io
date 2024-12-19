@@ -22,8 +22,8 @@ p {
 #header-subpages {
     width: 100%;
 }
-.container {
-    padding: 10px 10%;
+.header-container {
+    padding: 10px 5%;
 }
 nav .fa-solid {
     display: none;
@@ -85,6 +85,9 @@ nav ul li a:hover {
     font-weight: 20px;
 }
 /* ------------------DIGITAL MEDIA SUBPAGE------------------ */
+.container {
+    padding: 10px 10%;
+}
 #digital-media-01 {
     display: flex;
     align-items: center;
@@ -265,6 +268,8 @@ nav ul li a:hover {
     grid-gap: 40px;
     margin-top: 50px;
 }
+
+/* ------------------PRINT SUBPAGE------------------ */
 
 /* ------------------CSS FOR MOBILE------------------ */
 @media only screen and (max-width: 840px) {
