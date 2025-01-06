@@ -273,11 +273,14 @@ nav ul li a:hover {
 #print-01 {
     background-color: rgb(50, 50, 50);
 }
+.print-text {
+    padding: 30px 10%;
+}
 .print-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10%;
+    padding: 30px 10%;
 }
 .item {
     max-width: 1100px;
@@ -358,13 +361,19 @@ button i {
 }
 /* PAPER STACK ORDER */
 #p1 {
-    z-index: 3;
+    z-index: 6;
 }
 #p2 {
-    z-index: 2;
+    z-index: 5;
 }
 #p3 {
-    z-index: 1;
+    z-index: 4;
+}
+#p4 {
+    z-index: 3;
+}
+#p5 {
+    z-index: 2;
 }
 /* PAPER IMAGE */
 .paper-img {
@@ -435,7 +444,6 @@ button i {
     .copyright {
         font-size: 14px;
     }
-
     .card-wrapper {
         margin: 0 10px 25px;
     }
@@ -444,11 +452,21 @@ button i {
     }
 
     /* PRINT SUBPAGE */
+    .print-text h1 {
+        font-size: 30px;
+    }
+    .print-text p {
+        font-size: 14px;
+    }
+    .print-container {
+        margin-top: -10%;
+    }
     .book{
-        width: 178.8px;
-        height: 252.6px;
+        width: 149px;
+        height: 210.5px;
     }
     button i {
-        font-size: 30px;
+        margin-top: 250px;
+        font-size: 20px;
     }
 }
