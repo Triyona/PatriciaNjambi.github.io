@@ -252,91 +252,20 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 .work:hover .layer__card {
-    /* opacity: 80%; */
+    opacity: 80%;
     animation: move-data 1s forwards;
 }
 .layer:hover .layer__text {
     transform: translateY(210%);
 }
-@keyframes move-data {
+/* @keyframes show-data {
     100%{
         background: linear-gradient(transparent, rgba(255,28,58,0.5) #ff1c3a);
     }
 }
-/* .layer:hover .layer__text {
+.layer:hover .layer__text {
     animation: show-data 1s forwards;
 } */
-/* ------------------NEW PORTFOLIO------------------ */
-.portfolio__container {
-    /* display: grid; */
-    place-items: center;
-    /* margin-inline: 1.5rem;
-    padding-block: 5rem; */
-}
-.card__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
-    grid-gap: 40px;
-    row-gap: 80px;
-    margin-top: 50px;
-    place-items: center;
-    margin-bottom: 50px;
-}
-.card__article {
-    position: relative;
-    /* overflow: hidden; */
-}
-.card__img {
-    width: 328px;
-    border-radius: 1.5rem;
-}
-.card__data {
-    width: 280px;
-    text-align: center;
-    background-color: #ff3957;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .7);
-    border-radius: 1rem;
-    position: absolute;
-    bottom: 7rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    /* opacity: 0;
-    transition: opacity 1s 1s; */
-}
-.card__data h2 {
-    color: whitesmoke;
-}
-.card__article:not(:hover) .card__data {
-    animation: remove-data 1s forwards;
-}
-@keyframes remove-data{
-    0% {
-        transform: translateY(9rem);
-    }
-    50% {
-        transform: translateY(11rem);
-    }
-    100%{
-        transform: translateY(.5rem);
-    }
-}
-
-.card__article:hover .card__data{
-    animation: show-data 1s forwards;
-    /* opacity: 1;
-    transition: opacity .3s; */
-}
-
-@keyframes show-data{
-    50% {
-        transform: translateY(11rem);
-    }
-    100%{
-        transform: translateY(9rem);
-    }
-}
 /* ------------------CONTACT------------------ */
 #contact {
     padding: 30px 0;
@@ -503,33 +432,4 @@ form input, form textarea {
     .layer {
         opacity: 100%;
     }
-    .card__data {
-        bottom: 0rem;
-    }
 }
-
-@media screen and (max-width:400px){
-    .card__img {
-        width: 248px;
-    }
-    .card__data {
-        width: 215px;
-    }
-    .card__data h2 {
-        font-size: 19px;
-    }
-    .card__data p {
-        font-size: 14px;
-    }
-}
-/* @media screen and (min-width:768px){
-    .card__container{
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 1.5rem;
-    }
-}
-@media screen and (min-width:1120px){
-    .card__container{
-        grid-template-columns: repeat(3,1fr);
-    }
-} */
